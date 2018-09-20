@@ -9,11 +9,11 @@ import re
 import requests
 
 document = Document()
-url = 'http://61.183.11.150/graph_view.php?'
+url = ''
 headers = {
 'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
 
-'cookie':'Cacti=vmq88r5e8bmfitjde7m2ol42t2'
+'cookie':''
 }
 
 for i in range(12,18):
@@ -32,8 +32,8 @@ for i in range(12,18):
             else:
                 True
 
-            JPG_url = ( 'http://61.183.11.150/'+ a)
-            print( 'http://61.183.11.150/'+ a)
+            JPG_url = ( 'url'+ a)
+            print( 'url'+ a)
             JPG_url_r = JPG_url.replace(';','&')
             print(JPG_url_r)
 
