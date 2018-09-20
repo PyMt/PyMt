@@ -1,2 +1,2 @@
-ssh_connect should install paramiko module
+py DevOps
 # PyMt
