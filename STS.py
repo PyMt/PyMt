@@ -119,7 +119,7 @@ except IOError:
     fetch_sts_info(access_key_id, access_key_secret, sts_role_arn)
     print("临时身份信息存储完毕，当前目录下StsInfo.json")
 else:
-    if oss2.utils.http_to_unixtime(oss2.utils.http_date()) + DurationSeconds < STSINFO["sts_expire_date"]:
+    if oss2.utils.http_to_unixtime(oss2.utils.http_date()) + DurationSeconds > STSINFO["sts_expire_date"]:
         buck_put_object(sts_key_id = STSINFO["sts_key_id"],sts_key_secret = STSINFO["sts_key_secret"], sts_secrity_token = STSINFO["sts_secrity_token"])
         print("上传成功，good_lucky")
     else:
