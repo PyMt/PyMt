@@ -2,8 +2,8 @@
 import time
 import oss2
 
-access_key_id= 'LTAI4FcrVX2Fd6BkxcNemy9z'
-access_key_secret= 'h4JDj4uXuygtOr7EvkrEpLxYe2bn8F'
+access_key_id= ''
+access_key_secret= ''
 
 bucket_name = 'fralychen'
 
